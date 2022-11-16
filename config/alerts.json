@@ -1,0 +1,20 @@
+[
+  {
+    "alert": {
+      "email": ""
+    },
+    "base": "EUR",
+    "currency": "BTC",
+    "condition": "above",
+    "limit": 18000
+  },
+  {
+    "alert": {
+      "email": ""
+    },
+    "base": "EUR",
+    "currency": "BTC",
+    "condition": "below",
+    "limit": 15000
+  }
+]

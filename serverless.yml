@@ -1,0 +1,18 @@
+service: crypto-price
+useDotenv: true
+frameworkVersion: '3'
+
+provider:
+  name: aws
+  runtime: nodejs14.x
+
+functions:
+  checker:
+    handler: services/alerts/handler.checker
+    events:
+      - schedule: rate(1 minute)
+
+plugins:
+  - serverless-offline-scheduler
+  - serverless-offline
+  - serverless-dotenv-plugin
